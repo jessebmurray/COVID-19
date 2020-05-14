@@ -1,6 +1,11 @@
 # COVID-19
 Visualizations and other stuff for COVID-19
 
+#### How does population density affect the prevalence of COVID-19? 
+
+Presumeably, counties with low population densities, like rural counties, would seem to have a lower prevalence of COVID-19 because people are, quite literally, farther apart. Likewise, counties with high population densities, like urban counties, would seem to have a higher prevalence of COVID-19 because people are closer together, think the NYC subway. 
+
+Here we can see this relationship...
 
 For this gif, I got the county population and COVID-19 cases data from USA facts and I got county land area data from the 2010 US census. I made the images via the pandas and seaborn libraries with python. There's clearly a relationship between population density and coronavirus cases (hence the 6ft away heuristic) and the relationship becomes more clear as the number of cases increased. The states included in the 'East Coast' category clearly don't include *all* the states on the East coast because I wanted to show the hardest hit states, which on the east coast meant those around the tri-state area. Also, I wanted the combined populations of the east coast and west coast states to be roughly equal (~50 million people).
 ![](coast_size.gif)
