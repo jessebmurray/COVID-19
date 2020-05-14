@@ -1,6 +1,4 @@
 # COVID-19
-(This repo contains visualizations and statistics on COVID-19.)
-
 ### How does population density affect the prevalence of COVID-19? 
 
 ![](coast_size.gif)
