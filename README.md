@@ -11,6 +11,12 @@ I obtained the county population and COVID-19 cases data from USA facts and I ob
 
 ![](coast_size.gif)
 
+<br>
+<br>
+
+Here we can see the relationship across all US counties. I think it's less clear here because there could be a lot of counties with very small populations, and if those counties happen to have a lot of cases, they would have an enormous number of cases per capita without necessarily having a high population density. 
+
+![](all_size.gif)
 
 <br>
 <br>
