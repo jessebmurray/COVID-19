@@ -7,11 +7,10 @@ Presumeably, counties with low population densities, like rural counties, would 
 
 Here we can see the positive relationship.
 
-I obtained the county population and COVID-19 cases data from USA facts and I obtained county land area data from the 2010 US census. I made the images via the pandas and seaborn libraries with python. There's clearly a relationship between population density and coronavirus cases (hence the 6ft away heuristic) and it became more clear that there was a positive relationship as the number of cases increased. I included the hardest hit states on the east and west coast to obtain more reliable sample sizes of COVID-19 cases. 
+I obtained the county population and COVID-19 cases data from USA facts and I obtained county land area data from the 2010 US census. I made the images via the pandas and seaborn libraries with python. There's clearly a relationship between population density and coronavirus cases (hence the 6ft away heuristic) and it became more clear that there was a positive relationship as the number of cases increased. I included the hardest hit states on the east and west coast to obtain more reliable sample sizes of COVID-19 cases. I also chose the states specifically so that the combined populations of the east coast and west coast states would be roughly equal (50 plus or minus 2 million people). 
 
 ![](coast_size.gif)
 
-The states included in the 'East Coast' category clearly don't include *all* the states on the East coast because I wanted to show the hardest hit states, which on the east coast meant those around the tri-state area. Also, I wanted the combined populations of the east coast and west coast states to be roughly equal (~50 million people). 
 
 <br>
 <br>
