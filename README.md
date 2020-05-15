@@ -8,7 +8,8 @@ In this brief side project, I explore how the population density of a US county 
 
 Presumeably, counties with low population densities, like rural counties, would seem to have a lower prevalence of COVID-19 because people are, quite literally, farther apart. Likewise, counties with high population densities, like urban counties, would seem to have a higher prevalence of COVID-19 because people are closer together, think the crowded NYC subway. 
 
-![](/plots/relationship.png)
+
+<img src="plots/relationship.png" width="75%">
 
 #### Interpretation
 We can see that there is indeed a positive relationship between coronavirus cases and population density, which adds weight to the 6 ft away heuristic, and agrees with what we would expect. It became more clear that there was a positive relationship as the number of cases increased, however, the relationship gradually diminished over time. I think this may be because, in the early stages of the crisis, the crowded and busy counties got hit first, however, as the virus spread everywhere, the entropy increased so to speak and it didn't matter so much whether a location was crowded or not, counties everywhere had the virus in similar amounts. 
@@ -40,7 +41,8 @@ Here we can see the relationship across all US counties. I think it's less clear
 
 ## Coronavirus-related google searches in NYC
 
-![](plots/covid_searches.png)
+
+<img src="plots/covid_searches.png" width="75%">
 
 #### Interpretation
 
