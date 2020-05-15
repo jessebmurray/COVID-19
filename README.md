@@ -25,7 +25,7 @@ I obtained the county population and COVID-19 cases data from USA facts and I ob
 
 I chose the northeast and west states so that I would have more reliable sample sizes of COVID-19 cases. I also chose the states specifically so that the combined populations of the east coast and west coast states would be roughly equal (51 plus or minus 1 million people). 
 
-The correlation coefficient and its corresponding p-value were calcuated for counties that had greater than 0.1 cases per 100,000 people. 
+Pearson's correlation coefficient and the corresponding p-value were calculated for counties that had greater than 0.1 cases per 100,000 people. 
 
 One of the saddest moments of making these graphs was when I updated the data and found that I had to increase the top limit of the y-axis to fit the much greater number of cases in a few of the counties. 
 
