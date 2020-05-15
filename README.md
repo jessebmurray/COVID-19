@@ -7,7 +7,15 @@ Presumeably, counties with low population densities, like rural counties, would 
 
 Here we can see the positive relationship.
 
-I obtained the county population and COVID-19 cases data from USA facts and I obtained county land area data from the 2010 US census. I made the images via the pandas and seaborn libraries with python. There's clearly a relationship between population density and coronavirus cases (hence the 6ft away heuristic) and it became more clear that there was a positive relationship as the number of cases increased. I included the hardest hit states on the east and west coast to obtain more reliable sample sizes of COVID-19 cases. I also chose the states specifically so that the combined populations of the east coast and west coast states would be roughly equal (51 plus or minus 1 million people). 
+
+There's clearly a relationship between population density and coronavirus cases (hence the 6ft away heuristic) and it became more clear that there was a positive relationship as the number of cases increased, however, the relationship gradually diminished over time. I think this may be because, in the early stages, the crowded and busy counties will get hit first, however, as the virus spreads everywhere, the entropy goes up so to speak and it doesn't matter so much whether a location is crowded or not, 
+
+
+I obtained the county population and COVID-19 cases data from USA facts and I obtained county land area data from the 2010 US census. I created the visualization with pandas and matplotlib in python. I included the hardest hit states on the east and west coast to obtain more reliable sample sizes of COVID-19 cases. I also chose the states specifically so that the combined populations of the east coast and west coast states would be roughly equal (51 plus or minus 1 million people). 
+
+
+
+
 <br>
 <br>
 
