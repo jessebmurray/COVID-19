@@ -1,5 +1,5 @@
 # COVID-19
-### How does population density affect the prevalence of COVID-19? 
+## How does population density affect the prevalence of COVID-19? 
 
 ![](/plots/prevalence.gif)
 
@@ -23,8 +23,6 @@ The correlation coefficient and its corresponding p-value were calcuated for cou
 
 One of the saddest moments of making these graphs was when I updated the data and found that I had to increase the top limit of the y-axis to fit the much greater number of cases in a few of the counties. 
 
-
-
 <!-- 
 <br>
 <br>
@@ -36,9 +34,8 @@ Here we can see the relationship across all US counties. I think it's less clear
 -->
 
 <br>
-<br>
 
-### Coronavirus-related google searches in NYC
+## Coronavirus-related google searches in NYC
 
 ![](plots/covid_searches.png)
 
