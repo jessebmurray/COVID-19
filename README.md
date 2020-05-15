@@ -25,22 +25,32 @@ One of the saddest moments of making these graphs was when I updated the data an
 
 
 
-
-<br>
-<br>
+<!-- 
 <br>
 <br>
 
-<!-- Here we can see the relationship across all US counties. I think it's less clear here because there could be a lot of counties with very small populations, and if those counties happen to have a lot of cases, they would have an enormous number of cases per capita without necessarily having a high population density. 
+Here we can see the relationship across all US counties. I think it's less clear here because there could be a lot of counties with very small populations, and if those counties happen to have a lot of cases, they would have an enormous number of cases per capita without necessarily having a high population density. 
 
 ![](all_size.gif)
 
-<br>
-<br>
-
 -->
+
+<br>
+<br>
 
 ### Coronavirus-related google searches in NYC
 
-For this plot, I got the data from google search trends (link below) and I made the graph using the pandas and seaborn libraries. The goal is to show the hockeystick-like rise in searches due to COVID-19. The lineplot points show the average and the error bands show the 95% CI for each month.
-![](plots/covid1.png)
+![](plots/covid_searches.png)
+
+#### Interpretation
+
+In this plot we can see that certain google searches became very common in NYC during the COVID-19 crisis. Perhaps the most dismal one is the rise in searches for 'condolences'. In fact, I first thought about checking the search data on 'condolences' when I myself was writing somebody a letter of condolences due to COVID-19. Because gyms were closed in the NYC lockdown, people may have googled 'pushups' so that they could properly get their workout done at home via pushups, instead of at the gym. 
+
+#### Methods and materials
+
+For this plot, I obtained the data from google search trends and prepared it using pandas. I made the graph with the confidence intervals using seaborn. 
+
+
+
+
+
