@@ -11,12 +11,14 @@ I obtained the county population and COVID-19 cases data from USA facts and I ob
 <br>
 <br>
 
-Here we can see the relationship across all US counties. I think it's less clear here because there could be a lot of counties with very small populations, and if those counties happen to have a lot of cases, they would have an enormous number of cases per capita without necessarily having a high population density. 
+<!-- Here we can see the relationship across all US counties. I think it's less clear here because there could be a lot of counties with very small populations, and if those counties happen to have a lot of cases, they would have an enormous number of cases per capita without necessarily having a high population density. 
 
 ![](all_size.gif)
 
 <br>
 <br>
+
+-->
 
 For this plot, I got the data from google search trends (link below) and I made the graph using the pandas and seaborn libraries. The goal is to show the hockeystick-like rise in searches due to COVID-19. The lineplot points show the average and the error bands show the 95% CI for each month.
 ![](covid1.png)
