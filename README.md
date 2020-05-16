@@ -18,6 +18,9 @@ We can see that there is indeed a positive relationship between coronavirus case
 
 I showed Seattle versus Manhattan because I clearly remember in the beginning of March walking around the streets of manhattan, going in the subway, etc. and nobody was wearing masks. At the time, Seattle Washington was known to have cases and so people may have been more careful there, and, I believe Seattle was locked down much earlier than NYC. 
 
+Here we can see the evolving relationship across *all* US counties, not just ones in the northeast and west US states. 
+
+![](/plots/prevalence_all.gif)
  
 
 #### Methods and materials
