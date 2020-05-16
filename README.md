@@ -21,7 +21,18 @@ I showed Seattle versus Manhattan because I clearly remember in the beginning of
 Here we can see the evolving relationship across *all* US counties, not just ones in the northeast and west US states. 
 
 ![](/plots/prevalence_all.gif)
+
+#### State level data
+(Instead of county level data)
+
+Here we can see the relationship for all US states overall, and how that changes over time. 
+
+ ![](/plots/prevalence_states.gif)
  
+ ![](plots/relationship_states.png)
+ 
+ The relationship is quite strong. States with high population densities have a strong tendency to have many COVID-19 cases per capita. 
+
 
 #### Methods and materials
 I obtained the county population and COVID-19 cases data from USA facts and I obtained county land area data from the 2010 US census. I prepared the data with pandas, created the visualizations with matplotlib in python, and calculated the statistics using SciPy. I used https://ezgif.com/maker for converting from the pngs to the final gif. 
