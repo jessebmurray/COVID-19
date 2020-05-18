@@ -1,6 +1,6 @@
 # COVID-19
 
-## Using random forests and XGBoosts to predict coronavirus cases per capita within each US county
+## Using random forests and XGBoosts to predict COVID cases per capita within each US county from 2018 census data
 
 <!--
 ![](plots/rf_features.png)
