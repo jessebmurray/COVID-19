@@ -2,8 +2,7 @@
 
 ## Using Random forests and XGBoosts to predict COVID-19 cases per 100,000 within each US county from 2018 census data
 
-Date for cases per 100,000: 
-May 16, 2020
+Date of most recent COVID-19 cases per 100,000: May 16, 2020
 
 ![](plots/xgb_performance.png)
 
