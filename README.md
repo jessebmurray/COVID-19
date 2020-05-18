@@ -1,6 +1,6 @@
 # COVID-19 ML and Visualizations
 
-## Using Random forests and XGBoosts to predict COVID-19 cases per 100,000 within each US county from 2018 census data
+## Using Random Forests and Gradient Boosting to predict COVID-19 cases per 100,000 within each US county from 2018 census data
 
 Date of most recent COVID-19 cases per 100,000: May 16, 2020
 
@@ -17,7 +17,7 @@ Date of most recent COVID-19 cases per 100,000: May 16, 2020
 
 ![](plots/xgb_median_map.png)
 
-#### XGBoost Most Important Features from US Census
+#### Gradient Boost Most Predictive Features from US Census
 ![](plots/xg_features.png)
 
 
@@ -96,7 +96,7 @@ For this plot, I obtained the data from google search trends and prepared it usi
 
 Here we can see yhe features of the US census that were most predictive of COVID cases per 100,000 in the random forest model.
 
-#### Random Forest Most Important Features from US Census
+#### Random Forest Most Predictive Features from US Census
 ![](plots/rf_features.png)
 
 
