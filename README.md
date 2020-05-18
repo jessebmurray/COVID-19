@@ -4,17 +4,29 @@
 
 ### Using random forests and XGBoosts to predict COVID cases per capita within each US county from 2018 census data
 
-<!--
-![](plots/rf_features.png)
 
+![](plots/xgb_performance.png)
+
+
+![](plots/prediction_errors.png)
+
+
+![](plots/xgb_map.png)
+
+
+![](plots/xgb_median_performance.png)
+
+![](plots/xgb_median_map.png)
+
+#### XGBoost Most Important Features from US Census
 ![](plots/xg_features.png)
--->
 
-
-In this brief side project, I explore how the population density of a US county can be used to predict its prevalence of COVID-19, and how this relationship changes as the virus continues its march across urban, suburban, and rural counties alike. I also explore the relative changes in people's interests during the pandemic lockdown by looking at the changes in various google searches at the US epicenter of the crisis: NYC. 
 
 
 ## Visualizations
+
+
+Here I explore visuals of how the population density of a US county can be used to predict its prevalence of COVID-19, and how this relationship changes as the virus continues its march across urban, suburban, and rural counties alike. I also explore the relative changes in people's interests during the pandemic lockdown by looking at the changes in various google searches at the US epicenter of the crisis: NYC. 
 
 ### How does population density affect the prevalence of COVID-19? 
 
@@ -85,11 +97,9 @@ For this plot, I obtained the data from google search trends and prepared it usi
 
 Here we can see yhe features of the US census that were most predictive of COVID cases per 100,000 in the random forest model.
 
+#### Random Forest Most Important Features from US Census
 ![](plots/rf_features.png)
 
-
-#### The performance of the XGBoost alone model 
-![](plots/xgb_performance.png)
 
 ## Visualization Appendix 
 
