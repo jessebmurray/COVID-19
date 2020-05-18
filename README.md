@@ -1,6 +1,6 @@
 # COVID-19
 
-## Using a machine learning model to predict coronavirus cases in a county from US census data
+## Using random forests and XGBoosts to predict coronavirus cases per capita within each US county
 
 <!--
 ![](plots/rf_features.png)
