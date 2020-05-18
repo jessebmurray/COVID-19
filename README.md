@@ -1,6 +1,8 @@
 # COVID-19
 
-## Using random forests and XGBoosts to predict COVID cases per capita within each US county from 2018 census data
+## Machine Learning 
+
+### Using random forests and XGBoosts to predict COVID cases per capita within each US county from 2018 census data
 
 <!--
 ![](plots/rf_features.png)
@@ -11,7 +13,10 @@
 
 In this brief side project, I explore how the population density of a US county can be used to predict its prevalence of COVID-19, and how this relationship changes as the virus continues its march across urban, suburban, and rural counties alike. I also explore the relative changes in people's interests during the pandemic lockdown by looking at the changes in various google searches at the US epicenter of the crisis: NYC. 
 
-## How does population density affect the prevalence of COVID-19? 
+
+## Visualizations
+
+### How does population density affect the prevalence of COVID-19? 
 
 ![](/plots/prevalence.gif)
 
@@ -27,9 +32,6 @@ We can see that there is indeed a positive relationship between coronavirus case
 
 I showed Seattle versus Manhattan because I clearly remember in the beginning of March walking around the streets of manhattan, going in the subway, etc. and nobody was wearing masks. At the time, Seattle Washington was known to have cases and so people may have been more careful there, and, I believe Seattle was locked down much earlier than NYC. 
 
-Here we can see the evolving relationship across *all* US counties, not just ones in the northeast and west US states. 
-
-![](/plots/prevalence_all.gif)
 
 #### State level data
 (Instead of county level data)
@@ -79,6 +81,21 @@ In this plot we can see that certain google searches became very common in NYC d
 For this plot, I obtained the data from google search trends and prepared it using pandas. I made the graph with the confidence intervals using seaborn. 
 
 
+## Machine Learning Appendix
+
+Here we can see yhe features of the US census that were most predictive of COVID cases per 100,000 in the random forest model.
+
+![](plots/rf_features.png)
+
+
+#### The performance of the XGBoost alone model 
+![](plots/xgb_performance.png)
+
+## Visualization Appendix 
+
+Here we can see the evolving relationship across *all* US counties, not just ones in the northeast and west US states. 
+
+![](/plots/prevalence_all.gif)
 
 
 
