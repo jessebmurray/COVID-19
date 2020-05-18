@@ -2,11 +2,11 @@
 
 ## Using a machine learning model to predict coronavirus cases in a county from US census data
 
-
+<!--
 ![](plots/rf_features.png)
 
 ![](plots/xg_features.png)
-
+-->
 
 
 In this brief side project, I explore how the population density of a US county can be used to predict its prevalence of COVID-19, and how this relationship changes as the virus continues its march across urban, suburban, and rural counties alike. I also explore the relative changes in people's interests during the pandemic lockdown by looking at the changes in various google searches at the US epicenter of the crisis: NYC. 
