@@ -1,9 +1,9 @@
-# COVID-19
+# COVID-19 ML and Visualizations
 
-## Machine Learning 
+## Using Random forests and XGBoosts to predict COVID-19 cases per 100,000 within each US county from 2018 census data
 
-### Using random forests and XGBoosts to predict COVID cases per capita within each US county from 2018 census data
-
+Date for cases per 100,000: 
+May 16, 2020
 
 ![](plots/xgb_performance.png)
 
@@ -23,7 +23,7 @@
 
 
 
-## Visualizations
+## COVID-19 Visualizations
 
 
 Here I explore visuals of how the population density of a US county can be used to predict its prevalence of COVID-19, and how this relationship changes as the virus continues its march across urban, suburban, and rural counties alike. I also explore the relative changes in people's interests during the pandemic lockdown by looking at the changes in various google searches at the US epicenter of the crisis: NYC. 
