@@ -18,6 +18,42 @@ Clearly, the model has predictive power but isn't perfect. To check for any geog
 
 ![](plots/xgb_map.png)
 
+
+| County, State                  |   Prediction Error |
+|:---------------------------------|---------------:|
+| Forest County, Pennsylvania      |      -3950.66  |
+| Greensville County, Virginia     |      -2412.21  |
+| North Slope Borough, Alaska      |      -2378.68  |
+| Wheeler County, Georgia          |      -1994.88  |
+| Manassas city, Virginia          |      -1881.26  |
+| Issaquena County, Mississippi    |      -1878.01  |
+| Powell County, Montana           |      -1850.93  |
+| Stewart County, Georgia          |      -1838.78  |
+| Jones County, Texas              |      -1570.68  |
+| Buena Vista County, Iowa         |      -1511.32  |
+| DeKalb County, Missouri          |      -1286.27  |
+| Lee County, Kentucky             |      -1265.57  |
+| Emmet County, Iowa               |      -1248.64  |
+| Union County, Florida            |      -1194.15  |
+| Duplin County, North Carolina    |      -1173.87  |
+| New York County, New York        |      -1106.6   |
+| Ector County, Texas              |      -1047.72  |
+| Petersburg city, Virginia        |      -1008.12  |
+| Sevier County, Arkansas          |       -963.681 |
+| Tunica County, Mississippi       |       -952.414 |
+| San Francisco County, California |       -934.171 |
+| Lincoln County, Colorado         |       -930.412 |
+| Arlington County, Virginia       |       -898.588 |
+| Greene County, North Carolina    |       -867.263 |
+| Alexandria city, Virginia        |       -861.727 |
+| Scott County, Iowa               |       -856.461 |
+| Bailey County, Texas             |       -841.174 |
+| New Castle County, Delaware      |       -838.501 |
+| Dallam County, Texas             |       -830.803 |
+| Johnson County, Nebraska         |       -818.163 |
+
+
+
 #### Gradient Boost Most Predictive Features from US Census
 ![](plots/xg_features.png)
 
