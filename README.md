@@ -1,29 +1,31 @@
 # COVID-19 ML and Visualizations
 
-## Using machine learning to predict COVID-19 cases within each US county from 2018 US Census data
+## Using machine learning to predict COVID-19 cases within each US county from 2018 US Census Estimates data
 
 Most recent COVID-19 confirmed cases data: May 16, 2020
 
-In this project, I applied gradient boosted decision trees to 2018 US Census data to predict the number of confirmed COVID-19 cases per 100,000 within each US county. I then identified the counties with the biggest negative residuals, in other words, the counties for which the model most over-predicted the prevalence of COVID-19. These counties can then be considered the 'luckiest' counties, as they have fared much better than would be predicted from their US census data. Or perhaps, testing may need to be expanded in these counties, as they may have far more cases than currently reported. 
+In this project, I applied gradient boosted decision trees to 2018 US Census Estimates data to predict the number of confirmed COVID-19 cases per 100,000 within each US county. I then identified the counties with the biggest negative residuals, in other words, the counties for which the model most over-predicted the prevalence of COVID-19. These counties can then be considered the 'luckiest' counties, as they have fared much better than would be predicted from their US census data. Or perhaps, testing may need to be expanded in these counties, as they may have far more cases than presently reported. 
 
 ### Model Performance
 
 ![](plots/xgb_performance.png)
 
-For each county, the model was trained on all the counties except that county, and then made a prediction for the county. The performance of the model is an improvement on guessing the mean and median cases per 100,000 of all the other counties. The average absolute errors in the predictions from these strategies are shown below. The gradient boosted model was slightly improved by averaging it with the median cases per 100,000. 
+For each county, the model was trained on all the counties except that county, and then made a prediction for the county. In this way, there is no chance of data leakage. The performance of the model is an improvement on guessing the mean and median cases per 100,000 of all the other counties. The average absolute errors in the predictions from these strategies are shown below. The gradient boosted model was slightly improved by averaging it with the median cases per 100,000 of all the other counties.   
 
 ![](plots/prediction_errors.png)
 
+Clearly, the model has predictive power but isn't perfect. To check for any geographic bias in the prediction errors, I have shown a map of the prediction errors for each county in the continental US. Blue is where the model underpredicted, red is where the model overpredicted, and yellowish white is where the model was accurate. The overpredicted counties are shown in red because those are the counties where the model believes cases are much higher than presently reported. Maybe those counties should be 'checked again' so to speak, as the model suggests that they may be under-reporting cases. Likewise, the counties in blue are where the model predicted there would be far fewer cases than presently reported. 
 
 ![](plots/xgb_map.png)
 
+#### Gradient Boost Most Predictive Features from US Census
+![](plots/xg_features.png)
 
 ![](plots/xgb_median_performance.png)
 
 ![](plots/xgb_median_map.png)
 
-#### Gradient Boost Most Predictive Features from US Census
-![](plots/xg_features.png)
+
 
 
 
