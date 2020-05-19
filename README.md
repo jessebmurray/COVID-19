@@ -10,14 +10,18 @@ In this project, I applied gradient boosted decision trees to 2018 US Census Est
 
 ![](plots/xgb_performance.png)
 
-For each county, the model was trained on all the counties except that county, and then made a prediction for the county. In this way, there is no chance of data leakage. The performance of the model is an improvement on guessing the mean and median cases per 100,000 of all the other counties. The average absolute errors in the predictions from these strategies are shown below. The gradient boosted model was slightly improved by averaging it with the median cases per 100,000 of all the other counties.   
+For each county, the model was trained on all the other counties, and then made a prediction for the county. In other words, the model was cross-validated on every individual county. In this process there was no chance of data leakage. The model performs better than the simple strategy of guessing the mean and median cases per 100,000 from all the other counties. This fact is shown in the average absolute errors in the predictions from the model and those two simple strategies. The model, shown in blue, clearly has a lower mean absolute error (M.A.E.) than those simple strategies, shown in orange and green. Interestingly, the gradient boosted model was slightly improved by averaging it with the median cases per 100,000 of all the other counties, as shown in purple. 
 
 ![](plots/prediction_errors.png)
 
-Clearly, the model has predictive power but isn't perfect. To check for any geographic bias in the prediction errors, I have shown a map of the prediction errors for each county in the continental US. Blue is where the model underpredicted, red is where the model overpredicted, and yellowish white is where the model was accurate. The overpredicted counties are shown in red because those are the counties where the model believes cases are much higher than presently reported. Maybe those counties should be 'checked again' so to speak, as the model suggests that they may be under-reporting cases. Likewise, the counties in blue are where the model predicted there would be far fewer cases than presently reported. 
+The model clearly has predictive capability but isn't perfect. To check for any geographic bias in the prediction errors, I have shown a map of the prediction errors for each county in the continental US. Blue is where the model underpredicted, red is where the model overpredicted, and yellowish white is where the model was accurate. The overpredicted counties are shown in red because those are the counties where the model believes cases are much higher than presently reported. Perhaps those counties should be 'checked again', as the model suggests that they may be under-reporting cases. Likewise, the counties in blue are where the model predicted there would be far fewer cases than presently reported. 
 
 ![](plots/xgb_map.png)
 
+
+### The counties that may need to be 'checked again'
+
+Listed below are the top 30 counties for which the model expected to see far more cases than presently reported. 
 
 | County, State                  |   Prediction Error |
 |:---------------------------------|---------------:|
@@ -52,9 +56,13 @@ Clearly, the model has predictive power but isn't perfect. To check for any geog
 | Dallam County, Texas             |       -830.803 |
 | Johnson County, Nebraska         |       -818.163 |
 
+(A list of all the residuals for every County for both the Gradient Boost as well as the Gradient Boost averaged with the median is provided in `both_residuals.csv` in the `public_data` folder.)
 
 
 #### Gradient Boost Most Predictive Features from US Census
+
+
+
 ![](plots/xg_features.png)
 
 ![](plots/xgb_median_performance.png)
