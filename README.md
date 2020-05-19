@@ -10,7 +10,7 @@ In this project, I applied gradient boosted decision trees to 2018 US Census dat
 
 ![](plots/xgb_performance.png)
 
-The model predictions signifi
+For each county, the model was trained on all the counties except that county, and then made a prediction for the county. The performance of the model is an improvement on guessing the mean and median cases per 100,000 of all the other counties. The average absolute errors in the predictions from these strategies are shown below. The gradient boosted model was slightly improved by averaging it with the median cases per 100,000. 
 
 ![](plots/prediction_errors.png)
 
