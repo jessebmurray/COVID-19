@@ -11,7 +11,7 @@
 
 Most recent COVID-19 confirmed cases data: May 16, 2020
 
-In this project, I applied gradient boosted decision trees to 2018 US Census Estimates data to predict the number of confirmed COVID-19 cases per 100,000 within each US county. I then identified the counties with the biggest negative residuals, in other words, the counties for which the model most over-predicted the prevalence of COVID-19. These counties can then be considered the 'luckiest' counties, as they have fared much better than would be predicted from their US census data. Or perhaps, testing may need to be expanded in these counties, as they may have far more cases than presently reported. 
+In this project, I applied gradient boosted decision trees to 2018 US Census Estimates data to predict the number of confirmed COVID-19 cases per 100,000 within each US county. I then identified the counties with the biggest negative residuals, in other words, the counties for which the model most over-predicted the prevalence of COVID-19. These counties can be considered the 'luckiest' counties, as they have fared much better than was predicted from their US census data. Or perhaps, testing may need to be expanded in these counties, as they may have far more cases than presently reported. 
 
 #### Model Performance
 
