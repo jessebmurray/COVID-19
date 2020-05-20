@@ -1,6 +1,12 @@
 # COVID-19 ML and Visualizations
 
-## Using machine learning to predict COVID-19 cases within each US county from the 2018 US Census Estimates data
+#### Table of Contents
+1. [Machine Learning to predict COVID-19 cases](#ml)
+2. [Visualizations](#visuals)
+3. [Appendix](#ax)
+
+
+## Using machine learning to predict COVID-19 cases within each US county from the 2018 US Census Estimates data  <a name="ml"></a>
 
 Most recent COVID-19 confirmed cases data: May 16, 2020
 
@@ -72,7 +78,7 @@ It is natural to ask what features of the US census data are most important in p
 
 
 
-## COVID-19 Visualizations
+## COVID-19 Visualizations <a name="visuals"></a>
 
 
 Here I explore visuals of how the population density of a US county can be used to predict its prevalence of COVID-19, and how this relationship changes as the virus continues its march across urban, suburban, and rural counties alike. I also explore the relative changes in people's interests during the pandemic lockdown by looking at the changes in various google searches at the US epicenter of the crisis: NYC. 
@@ -136,6 +142,8 @@ Here we can see the relationship across all US counties. I think it's less clear
 #### Interpretation
 
 In this plot we can see that certain google searches became very common in NYC during the COVID-19 crisis. Perhaps the most dismal one is the rise in searches for 'condolences'. In fact, I first thought about checking the search data on 'condolences' when I myself was writing somebody a letter of condolences due to COVID-19. Because gyms were closed in the NYC lockdown, people may have googled 'pushups' so that they could properly get their workout done at home via pushups, instead of at the gym. 
+
+### Appendix <a name="ax"></a>
 
 #### Methods and materials
 
