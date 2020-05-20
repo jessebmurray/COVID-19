@@ -15,6 +15,7 @@ In this project, I applied gradient boosted decision trees to 2018 US Census Est
 
 ### Model Performance
 
+<a name="performance"></a>
 ![](plots/xgb_performance.png)
 
 For each county, the model was trained on all the other counties, and then made a prediction for the county. In other words, the model was cross-validated on every individual county. In this process there was no chance of data leakage. The model performs better than the simple strategy of guessing the mean and median cases per 100,000 from all the other counties. This fact is shown in the average absolute errors in the predictions from the model and those two simple strategies. The model, shown in blue, clearly has a lower mean absolute error (M.A.E.) than those simple strategies, shown in orange and green. Interestingly, the gradient boosted model was slightly improved by averaging it with the median cases per 100,000 of all the other counties, as shown in purple. 
@@ -73,14 +74,10 @@ It is natural to ask what features of the US census data are most important in p
 ![](plots/xg_features.png)
 
 
-![](plots/xgb_median_performance.png)
-
-![](plots/xgb_median_map.png)
 
 
-
-## COVID-19 Visualizations <a name="visuals"></a>
-
+<a name="visuals"></a>
+## Visualizations of the relationship between population density and COVID-19, and Google search trends in NYC 
 
 Here I explore visuals of how the population density of a US county can be used to predict its prevalence of COVID-19, and how this relationship changes as the virus continues its march across urban, suburban, and rural counties alike. I also explore the relative changes in people's interests during the pandemic lockdown by looking at the changes in various google searches at the US epicenter of the crisis: NYC. 
 
@@ -93,15 +90,16 @@ Presumeably, counties with low population densities, like rural counties, would 
 
 ![](plots/relationship.png)
 
-
-
-#### Interpretation
 We can see that there is indeed a positive relationship between coronavirus cases and population density, which adds weight to the 6 ft away heuristic, and agrees with what we would expect. It became more clear that there was a positive relationship as the number of cases increased, however, the relationship gradually diminished over time. I think this may be because, in the early stages of the crisis, the crowded and busy counties got hit first, however, as the virus spread everywhere, the entropy increased so to speak and it didn't matter so much whether a location was crowded or not, counties everywhere had the virus in similar amounts. 
+
+I chose the northeast and west states so that I would have more reliable sample sizes of COVID-19 cases. I also chose the states specifically so that the combined populations of the Northeast and West states would be roughly equal (51 plus or minus 1 million people). 
+
+Pearson's correlation coefficient and the corresponding p-value were calculated for counties that had greater than 0.1 cases per 100,000 people. 
 
 I showed Seattle versus Manhattan because I clearly remember in the beginning of March walking around the streets of manhattan, going in the subway, etc. and nobody was wearing masks. At the time, Seattle Washington was known to have cases and so people may have been more careful there, and, I believe Seattle was locked down much earlier than NYC. 
 
 
-#### State level data
+##### State level data on the relationship between population density and COVID-19
 (Instead of county level data)
 
 Here we can see the relationship for all US states overall, and how that changes over time. 
@@ -110,17 +108,9 @@ Here we can see the relationship for all US states overall, and how that changes
  
  ![](plots/relationship_states.png)
  
- The relationship is quite strong. States with high population densities have a strong tendency to have many COVID-19 cases per capita. 
+The relationship is quite strong. States with high population densities have a strong tendency to have many COVID-19 cases per capita. 
 
 
-#### Methods and materials
-I obtained the county population and COVID-19 cases data from USA facts and I obtained county land area data from the 2010 US census. I prepared the data with pandas, created the visualizations with matplotlib in python, and calculated the statistics using SciPy. I used https://ezgif.com/maker for converting from the pngs to the final gif. 
-
-I chose the northeast and west states so that I would have more reliable sample sizes of COVID-19 cases. I also chose the states specifically so that the combined populations of the Northeast and West states would be roughly equal (51 plus or minus 1 million people). 
-
-Pearson's correlation coefficient and the corresponding p-value were calculated for counties that had greater than 0.1 cases per 100,000 people. 
-
-One of the saddest moments of making these graphs was when I updated the data and found that I had to increase the top limit of the y-axis to fit the much greater number of cases in a few of the counties. 
 
 <!-- 
 <br>
@@ -134,34 +124,34 @@ Here we can see the relationship across all US counties. I think it's less clear
 
 <br>
 
-## Coronavirus-related google searches in NYC
+### COVID-19 related google searches in NYC
 
 
 ![](plots/covid_searches.png)
 
+It is clear that certain google searches became far more common in NYC as a result of the COVID-19 crisis. Perhaps the most dismal trend is the rise in searches for 'condolences'. In fact, I first thought about checking the search data on 'condolences' when I myself was writing somebody a letter of condolences due to COVID-19. Because gyms were closed in the NYC lockdown, people may have googled 'pushups' so that they could properly get their workout done at home via pushups, instead of at the gym. 
 
-#### Interpretation
 
-In this plot we can see that certain google searches became very common in NYC during the COVID-19 crisis. Perhaps the most dismal one is the rise in searches for 'condolences'. In fact, I first thought about checking the search data on 'condolences' when I myself was writing somebody a letter of condolences due to COVID-19. Because gyms were closed in the NYC lockdown, people may have googled 'pushups' so that they could properly get their workout done at home via pushups, instead of at the gym. 
 
-### Appendix <a name="ax"></a>
-
-#### Methods and materials
-
-For this plot, I obtained the data from google search trends and prepared it using pandas. I made the graph with the confidence intervals using seaborn. 
-
+## Appendix <a name="ax"></a>
 
 ## Machine Learning Appendix
 
-Here we can see yhe features of the US census that were most predictive of COVID cases per 100,000 in the random forest model.
 
-#### Random Forest Most Predictive Features from US Census
-![](plots/rf_features.png)
+
+### Averaging the Gradient Boost with guessing the median 
+
+As shown in the [graph of prediction errors](#performance), the Gradient Boost model was slightly improved by averaging its prediction with the median cases per 100,000 of all the *other* n-1 counties. The dashed blue line in the plot below shows the *overall* median cases per 100,000 in all US counties. The predictions are squished inwards towards the dashed blue line and the mean absolute error is slightly reduced. 
+
+![](plots/xgb_median_performance.png)
+
+![](plots/xgb_median_map.png)
+
 
 
 ## Visualization Appendix 
 
-Here we can see the evolving relationship across *all* US counties, not just ones in the northeast and west US states. 
+Here we can see the evolving relationship between population density and COVID-19 across *all* US counties, not just ones in the northeast and west US states. The strength of the relationship is reduced. 
 
 ![](/plots/prevalence_all.gif)
 
