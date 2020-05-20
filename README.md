@@ -6,7 +6,8 @@
 3. [Appendix](#ax)
 
 
-## Using machine learning to predict COVID-19 cases within each US county from the 2018 US Census Estimates data  <a name="ml"></a>
+<a name="ml"></a>
+## Using machine learning to predict COVID-19 cases within each US county from the 2018 US Census Estimates data  
 
 Most recent COVID-19 confirmed cases data: May 16, 2020
 
