@@ -99,7 +99,7 @@ Pearson's correlation coefficient and the corresponding p-value were calculated 
 I showed Seattle versus Manhattan because I clearly remember in the beginning of March walking around the streets of manhattan, going in the subway, etc. and nobody was wearing masks. At the time, Seattle Washington was known to have cases and so people may have been more careful there, and, I believe Seattle was locked down much earlier than NYC. 
 
 
-### State level data on the relationship between population density and COVID-19
+### State level data on the relationship between population density and prevalence of COVID-19
 (Instead of county level data)
 
 Here we can see the relationship for all US states overall, and how that changes over time. 
@@ -136,6 +136,14 @@ It is clear that certain google searches became far more common in NYC as a resu
 ## Appendix <a name="ax"></a>
 
 ### Machine Learning Appendix
+
+#### The individual relationship each feature of the US Census has with COVID-19 cases
+
+Below is a 5 minute slide show of the individual relationship between each predictor variable from the 2018 US Census estimates and COVID-19 cases per 100,000 for each US county. The Pearson correlation coefficient is provided along with the p-value. 
+
+![](plots/correlations.gif)
+
+Note that each of these images is available in `public_data/correlations`.
 
 #### Averaging the Gradient Boost with guessing the median 
 
