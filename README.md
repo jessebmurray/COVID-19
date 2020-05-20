@@ -1,6 +1,6 @@
 # COVID-19 ML and Visualizations
 
-## Using machine learning to predict COVID-19 cases within each US county from 2018 US Census Estimates data
+## Using machine learning to predict COVID-19 cases within each US county from the 2018 US Census Estimates data
 
 Most recent COVID-19 confirmed cases data: May 16, 2020
 
@@ -19,9 +19,9 @@ The model clearly has predictive capability but isn't perfect. To check for any 
 ![](plots/xgb_map.png)
 
 
-### The counties that may need to be 'checked again'
+### Most over-predicted counties 
 
-Listed below are the top 30 counties for which the model expected to see far more cases than presently reported. 
+Listed below are the top 30 counties for which the Gradient Boosted model expected to see far more cases than presently reported, suggesting that these counties may have more cases than presently reported. 
 
 | County, State                  |   Prediction Error |
 |:---------------------------------|---------------:|
@@ -59,17 +59,16 @@ Listed below are the top 30 counties for which the model expected to see far mor
 (A list of all the residuals for every County for both the Gradient Boost as well as the Gradient Boost averaged with the median is provided in `both_residuals.csv` in the `public_data` folder.)
 
 
-#### Gradient Boost Most Predictive Features from US Census
+#### Most predictive features from the US Census
 
-
+It is natural to ask what features of the US census data are most important in predicting the prevalence of COVID-19 within a county. Certainly, location is an important feature: cases per capita in New York are likely greater than cases per capita in Alaska. However, other features such as demographics, amount and type of population growth, employment, and education features are each important. Predictive features do not necessarily have a simple positive or negative association with the predictive variable. Because gradient boosting uses an ensemble of decision trees, a predictive feature can have both a positive *and* a negative association with the target variable, depending on the other features present. That is why it is impossible to provide the *direction* of the association each predictor variable has with the target variable: COVID-19 cases. 
 
 ![](plots/xg_features.png)
+
 
 ![](plots/xgb_median_performance.png)
 
 ![](plots/xgb_median_map.png)
-
-
 
 
 
