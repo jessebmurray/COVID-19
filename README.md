@@ -143,7 +143,7 @@ Below is a 5 minute slide show of the individual relationship between each predi
 
 ![](plots/correlations.gif)
 
-Note that each of these images is available in `public_data/correlations`.
+Note that each of these images is available in `plots/correlations`.
 
 #### Averaging the Gradient Boost with guessing the median 
 
