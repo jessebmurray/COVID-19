@@ -13,7 +13,7 @@ Most recent COVID-19 confirmed cases data: May 16, 2020
 
 In this project, I applied gradient boosted decision trees to 2018 US Census Estimates data to predict the number of confirmed COVID-19 cases per 100,000 within each US county. I then identified the counties with the biggest negative residuals, in other words, the counties for which the model most over-predicted the prevalence of COVID-19. These counties can then be considered the 'luckiest' counties, as they have fared much better than would be predicted from their US census data. Or perhaps, testing may need to be expanded in these counties, as they may have far more cases than presently reported. 
 
-### Model Performance
+#### Model Performance
 
 <a name="performance"></a>
 ![](plots/xgb_performance.png)
@@ -27,7 +27,7 @@ The model clearly has predictive capability but isn't perfect. To check for any 
 ![](plots/xgb_map.png)
 
 
-### Most over-predicted counties 
+#### Most over-predicted counties 
 
 Listed below are the top 30 counties for which the Gradient Boosted model expected to see far more cases than presently reported, suggesting that these counties may have more cases than presently reported. 
 
@@ -81,7 +81,7 @@ It is natural to ask what features of the US census data are most important in p
 
 Here I explore visuals of how the population density of a US county can be used to predict its prevalence of COVID-19, and how this relationship changes as the virus continues its march across urban, suburban, and rural counties alike. I also explore the relative changes in people's interests during the pandemic lockdown by looking at the changes in various google searches at the US epicenter of the crisis: NYC. 
 
-### How does population density affect the prevalence of COVID-19? 
+#### How does population density affect the prevalence of COVID-19? 
 
 ![](/plots/prevalence.gif)
 
@@ -99,7 +99,7 @@ Pearson's correlation coefficient and the corresponding p-value were calculated 
 I showed Seattle versus Manhattan because I clearly remember in the beginning of March walking around the streets of manhattan, going in the subway, etc. and nobody was wearing masks. At the time, Seattle Washington was known to have cases and so people may have been more careful there, and, I believe Seattle was locked down much earlier than NYC. 
 
 
-##### State level data on the relationship between population density and COVID-19
+#### State level data on the relationship between population density and COVID-19
 (Instead of county level data)
 
 Here we can see the relationship for all US states overall, and how that changes over time. 
@@ -124,7 +124,7 @@ Here we can see the relationship across all US counties. I think it's less clear
 
 <br>
 
-### COVID-19 related google searches in NYC
+#### COVID-19 related google searches in NYC
 
 
 ![](plots/covid_searches.png)
@@ -135,11 +135,9 @@ It is clear that certain google searches became far more common in NYC as a resu
 
 ## Appendix <a name="ax"></a>
 
-## Machine Learning Appendix
+### Machine Learning Appendix
 
-
-
-### Averaging the Gradient Boost with guessing the median 
+#### Averaging the Gradient Boost with guessing the median 
 
 As shown in the [graph of prediction errors](#performance), the Gradient Boost model was slightly improved by averaging its prediction with the median cases per 100,000 of all the *other* n-1 counties. The dashed blue line in the plot below shows the *overall* median cases per 100,000 in all US counties. The predictions are squished inwards towards the dashed blue line and the mean absolute error is slightly reduced. 
 
@@ -149,7 +147,7 @@ As shown in the [graph of prediction errors](#performance), the Gradient Boost m
 
 
 
-## Visualization Appendix 
+### Visualization Appendix 
 
 Here we can see the evolving relationship between population density and COVID-19 across *all* US counties, not just ones in the northeast and west US states. The strength of the relationship is reduced. 
 
